@@ -140,6 +140,24 @@ function MyApp({ Component, pageProps }) {
             font-size: 24px;
             font-weight: 600;
           }
+          .calculator-grid > button {
+          cursor: pointer;
+          font-size: 2rem;
+          border: 1px solid #ccc;
+          outline: none;
+          background-color: rgba(255, 255, 255, 0.7);
+          border-radius: 8%;
+        }
+        .span-two {
+          grid-column: span 2;
+        }
+
+        .calculator-grid > button:hover,
+        .calculator-grid > button:focus {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+
+
         `}</style>
       </>
     );
